@@ -1,14 +1,13 @@
-var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
   mode: 'development',
   devtool: false,
-  entry: "./index.js",
+  entry: "./src/index.js",
   output: {
     chunkFilename: '[name]-[chunkhash].js',
     path: path.join(__dirname, './public/js'),
-    filename: "[name].bundle.js",
+    filename: "bundle.js",
     publicPath: './public'
   },
   module: {
